@@ -1,4 +1,26 @@
 /* -----------------------------------------------------------------------------------
+ * LiquidCrystal595 - Interface LCD using 74HC595 shift register and only 3 pins
+ * Copyright (C) 2008  David A. Mellis
+ * Copyright (C) 2009  Limor Fried
+ * Copyright (C) 2011  Steve Hobley
+ * Copyright (C) 2012  Rowan Simms
+ * Copyright (C) 2019  Phil Duby
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2.1 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
+    USA
+
  * $Author: robaby@gmail.com $
  * $Date: 2012-04-08 22:54:07 +0000 (Sun, 08 Apr 2012) $
  * $Revision: 4 $
@@ -17,7 +39,6 @@
  * v1.0
  *    - Now works with Arduino 1.0 (not backwards compatible)
  *    - Re-ordered Shift Register Pinouts to allow for better prototyping
- *
  *
  * ---Shift Register 74HC595---
  * [SR Pin 14 (DS)]    to Arduino pin - [datapin]
